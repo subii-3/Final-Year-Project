@@ -1,0 +1,21 @@
+<!-- templates/worker_profile_form.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Worker Profile</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/worker_profile_form.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Worker Profile Form</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
