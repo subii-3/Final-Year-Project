@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+
+.navbar1{
+    background-color: rgb(87, 2, 87);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo{
+    border-radius: 50%;
+    width: 60px;
+}
+.navy{
+    font-size: 30px;
+    color: white;
+}
+li{
+    padding: 5px;
+}
+  
+ /* Ensure image fits the card */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* Make sure card takes full height for vertical alignment */
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card body spacing */
+.card-body {
+    padding: 1rem;
+}
+
+/* Ratings spacing */
+.card-body .text-start strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Modal styling (optional improvements) */
+.modal-content {
+    border-radius: 0.5rem;
+}
+
+/* Fix alignment issues */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-md-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Button spacing */
+.card-body .btn {
+    width: 100%;
+}
+
+/* General text alignment fix */
+.text-dark, .card-title {
+    text-align: left;
+}

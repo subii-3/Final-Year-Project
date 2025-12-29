@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACMS</title>
+    <link rel="stylesheet" href="{% static 'C:\Users\subitha\acms\static\Css\Home.css' %}">
+</head>
+<body>
+    <div class="hole">
+    <div class="navbar">
+        <img src="{% static 'C:\Users\subitha\acms\static\Img\img1.jpg' %}" class="logo">
+        <h1>Online Service Booking System</h1>
+        <a href="{% url 'SignUp' %}"><li>Sign Up</li></a>
+        <a href="{% url 'Login' %}"><li>Login</li></a>
+        <a href="{% url 'Contact' %}"><li class="li">Contact</li></a>
+        <a href="{% url 'About' %}"><li class="li">About Us</li></a>
+        <a href="{% url 'Home' %}"><li>Home</li></a>
+    </div>
+    <div class="container">
+            <div class="content">
+                <span><h1>ACMS</h1></span>
+                <h2>Book Your Service Easily</h2>
+                <h3>Fast, reliable, and hassle-free booking experience.</h3>
+                <a href="{% url 'Services' %}"><button class="btn">View Services</button></a>
+                <a href="{% url 'Appliances' %}"><button class="btn">Book a Service</button></a>
+            </div>
+        <div class="image-container">
+            <img src="{% static 'C:\Users\subitha\acms\static\Img\ser.webp' %}" alt="ser" class="img">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ACMS All Rights Reserved</p>
+        <a><p>About Us</p></a>
+        <a><p>Contact Us</p></a>
+        <a><p>Learn about Us</p></a>
+    </footer>
+    </div>
+</body>
+</html>

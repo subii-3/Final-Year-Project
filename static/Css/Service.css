@@ -1,0 +1,66 @@
+
+.navbar1{
+    background-color: rgb(87, 2, 87);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo{
+    border-radius: 50%;
+    width: 60px;
+}
+.navy{
+    font-size: 30px;
+    color: white;
+}
+li{
+    padding: 5px;
+}
+
+
+.list{
+    width:300px;
+    height: 370px;
+    background-color:rgb(196, 151, 158);
+    text-align: center;
+    border:2px solid black;
+    border-radius: 17px;
+    box-shadow: 15px 10px 8px gray;
+    float:left;
+    margin:55px;
+    padding:25px;
+    margin-left: 80px;
+}
+.reno{
+    width:300px;
+    height: 370px;
+    background-color:rgb(196, 151, 158);
+    text-align: center;
+    border:2px ridge black;
+    border-radius: 17px;
+    box-shadow: 15px 10px 8px gray;
+    float:left;
+    margin-left:510px;
+    padding:25px;
+}
+.image img{
+    width: 250px;
+    height: 220px;
+}
+body{
+    background-color:plum;
+}
+button{
+    background-color: palevioletred;
+    padding:8px;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: aquamarine;
+}
+h3{
+    font-family:cursive;
+}
+footer{
+    margin-top: 1340px;
+}

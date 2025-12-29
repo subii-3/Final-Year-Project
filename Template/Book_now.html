@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a service with us. Fill in the form to schedule your appointment.">
+  <title>Book Service</title>
+  <link rel="stylesheet" href="{% static 'Css/Book_now.css' %}">
+</head>
+<body>
+
+  <h2>Book Service</h2>
+
+  <!-- Success Message -->
+  {% if messages %}
+    <div class="alert alert-success">
+      {% for message in messages %}
+        <p>{{ message }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <form method="POST" action="{% url 'Book_now' %}">
+    {% csrf_token %}
+    
+    <label for="service_name">Service Name</label>
+    <input type="text" id="service_name" name="service_name" value=" " >
+
+    <label for="Customer_name">Customer Name</label>
+    <input type="text" id="Customer_name" name="Customer_name" value=" " >
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="number">Phone Number</label>
+    <input type="number" id="number" name="number" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <label for="additional_info">Additional Info (Optional)</label>
+    <textarea id="additional_info" name="additional_info" rows="3"></textarea>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+
+</body>
+</html>

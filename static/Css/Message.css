@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.17);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:rgb(87, 2, 87);
+}
+h3{
+    color: lightcoral;
+}
+.container{
+    margin-top: 200px;
+    background-color: rgb(240, 128, 128, 0.5);
+    width: 400px;
+    margin-left: 500px;
+    border: 1px solid rgb(87, 2, 87);
+    border-radius: 10px;
+}
